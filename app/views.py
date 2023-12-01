@@ -60,7 +60,7 @@ def xzy_there(request: HttpRequest) -> HttpRequest:
         return render(request, "xyz.html", {"form": form})
 
 
-def cen(request: HttpRequest) -> HttpRequest:
+def cens(request: HttpRequest) -> HttpRequest:
     form = cen(request.GET)
 
     if form.is_valid():

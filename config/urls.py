@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import font_times, no_sums, xzy_there, cen
+from app.views import font_times, no_sums, xzy_there, cens
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("warmup-2/font-times/", font_times, name="font"),
     path("logic-2/no-teen-sum/", no_sums, name="nts"),
     path("string-2/xyz-there/", xzy_there, name="xyz"),
-    path("list-2/centered-average/", cen, name="centered"),
+    path("list-2/centered-average/", cens, name="centered"),
 ]
